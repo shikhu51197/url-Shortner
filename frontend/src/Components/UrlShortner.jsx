@@ -22,7 +22,7 @@ const UrlShortener = () => {
           return;
         }
     try {
-      const response = await axios.post("http://localhost:5000/api/shorten", {
+      const response = await axios.post("https://url-shortner-topaz-iota.vercel.app/api/shorten", {
         originalUrl: originalUrl,
       });
 

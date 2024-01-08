@@ -53,7 +53,7 @@ export const signupfunc =
     dispatch(get_singup_request());
 
     axios
-      .post("http://localhost:5000/api/auth/signup", {
+      .post("https://url-shortner-topaz-iota.vercel.app/api/auth/signup", {
         name,
         email,
         password,
@@ -81,7 +81,7 @@ export const loginfunc =
     dispatch(get_login_request());
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "https://url-shortner-topaz-iota.vercel.app/api/auth/login",
         {
           email,
           password,
