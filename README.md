@@ -1,11 +1,11 @@
 
 > 💻 PROJECT NAME ✨ => 💻   url-Shortner : URL Hashing System & Authentication System
 <br>
-
+---
 [![Backend Deploy to Vercel](https://img.shields.io/badge/Backend_Deployed_Vercel_Link-0A66C2?style=for-the-badge&logo=ko-fi&logoColor=white)](https://url-shortner-topaz-iota.vercel.app/)
 [![Deployed App Vercel Link](https://img.shields.io/badge/Deployed_App_Vercel_Link-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://url-shortner-zptf.vercel.app/)
 
-
+---
 ## 🔗 Profile Links✨
 
 
@@ -13,34 +13,40 @@
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | [![Resume](https://img.shields.io/badge/my_Resume-E75480?style=for-the-badge&logo=ko-fi&logoColor=white)](https://drive.google.com/file/d/1YE62u2ChjmlR-EKeqZ75UvFMg_KcY86T/view?usp=sharing) | [![github](https://img.shields.io/badge/github-1DA1F2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/shikhu51197/)| [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shikha-gupta-12a2b5199) |[![portfolio](https://img.shields.io/badge/my_portfolio-18A303?style=for-the-badge&logo=ionic&logoColor=white)](https://shikhu51197.github.io/) |[![Blogger](https://img.shields.io/badge/Blogger-FE5A1D?style=for-the-badge&logo=Blogger&logoColor=white)](https://wwwartificial-intelligence.blogspot.com/) |[![Medium](https://img.shields.io/badge/Medium-000?style=for-the-badge&logo=Medium&logoColor=white)](https://medium.com/@sg780060) |  
 
-
+---
 ## 💫Tech-Stack->
 
 - #### For Frontend:-
+  
    - `HTML5`
   - `CSS3`
   - `JavaScript `
   - `ReactJS`
   - `Redux`
+    
  - #### For Backend:-
+   
    - `NodeJS`
    - `ExpressJS`
     - `MongoDB `
+     
 - #### For deploy database:- 
     
      - `Vercel`
    
-- #### For Styling:-  
+- #### For Styling:-
+  
    - `Chakra UI `
   
 - #### For live Project: -
-- 
+
    - `Vercel`
   
  - #### Hashing Library:-
- - 
--  `object-hash`
 
+-  `object-hash`
+  
+---
 ## ⭕Steps to run our project:
 
 ✨Clone the repository.
@@ -71,10 +77,10 @@ $ Node.js: Serves as the runtime environment for the entire application, ensurin
 # Authentication, Association, and Tracking
 The system employs user authentication to ensure secure interactions. Hashed URLs are associated with their original counterparts, and click events are tracked for analytics, providing valuable insights for marketing strategies.
 
-
+---
 ## Getting Started 
     
-# Functionality
+# Functionality For Url Shortener & Authentication :-
 
   ⭕ URL Shortening
   
@@ -100,7 +106,7 @@ The system employs user authentication to ensure secure interactions. Hashed URL
 
     ✨Clipboard Copy Failure: If copying to the clipboard fails, users are notified of the error.
 
-⭕ Form Validation 
+⭕ Form Validation on Authentication
 
       Explain the rules and requirements for form validation in your application.
 
@@ -108,24 +114,24 @@ The system employs user authentication to ensure secure interactions. Hashed URL
 
     Provide a list of possible form validation errors and their corresponding error messages.
 
-⭕ Invalid Email Format:
+    ⭕ Invalid Email Format:
 
      Message: "Please enter a valid email address."
      
-⭕ Invalid Password:
+    ⭕ Invalid Password:
 
      Message: "Password must be at least 8 characters long and include at least one lowercase letter, one uppercase letter, and one digit."
-⭕ Invalid Phone Format:
+    ⭕ Invalid Phone Format:
 
     Message: "Please enter a valid 10-digit phone number."
-⭕ User Already Exists:
+    ⭕ User Already Exists:
 
     Message: "An account with this email address already exists. Please use a different email."
-⭕ Server Error:
+    ⭕ Server Error:
 
     Message: "Something went wrong on our end. Please try again later."
 
-
+---
 💫Backend (Node.js)
 
         The backend is a Node.js server using Express, MongoDB for data storage, bcrypt for password hashing, and JSON Web Tokens (JWT) for authentication.
@@ -139,6 +145,7 @@ Endpoints:
        /signup: User signup with validation.
       /login: User login with JWT token generation.
       /:- The URL shortening logic involves hashing the original URL using the object-hash library.
+     🌐 https://url-shortner-topaz-iota.vercel.app/api-doc:- for swagger view
       
 💫Frontend (React.js)
 
@@ -146,9 +153,9 @@ Endpoints:
 
 Components:
 
-           Signup.js: User signup form.
-          Login.js: User login form.
-          UrlShotner:- Url Modal part
+         Signup.js: User signup form.
+         Login.js: User login form.
+         UrlShotner:- Url Modal part
          
 ✨Hosting on Vercel
 
@@ -168,7 +175,7 @@ Deploy to Vercel:
 # Tests
 ---
 $ Backend API:
-  Write unit tests using testing libraries like Mocha Jest , and Postman.
+  Write unit tests using testing libraries like Mocha Jest, and Postman.
 
 $ Frontend (if applicable):
   Write unit tests using Jest and React Testing Library.
@@ -179,7 +186,7 @@ $ API documentation:
 # Backend (Node.js, Express, MongoDB):
 
 Use Express.js to create a RESTful API.
-MongoDB to store the mappings between the hashed URLs and the original URLs.
+MongoDB stores the mappings between the hashed URLs and the original URLs.
 
 # Frontend (React.js):
 
@@ -266,6 +273,8 @@ Implement a CI/CD pipeline for automated testing and deployment using tools like
 # Swagger:
 
 Integrate Swagger documentation for the API to assist other developers in understanding and interacting with your API.
+
+![Screenshot (1886)](https://github.com/shikhu51197/url-Shortner/assets/107506646/c7f41ad2-4455-4d4b-bd01-7c8b7831b057)
 
 # Acknowledgments:
 
