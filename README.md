@@ -33,7 +33,7 @@
      
 - #### For deploy database:- 
     
-     - `Vercel`
+   - `Vercel`
    
 - #### For Styling:-
   
@@ -45,7 +45,7 @@
   
  - #### Hashing Library:-
 
--  `object-hash`
+   -  `object-hash`
   
 ---
 ## ⭕Steps to run our project:
@@ -59,27 +59,54 @@
 ✨Run the command `npm start` in the frontend folder on localhost:3000.
 
 ---
+## Features ✨:-
+---
+ | Serial No            | Feature                                                              |
+| ----------------- | ------------------------
+| 1 | User Signup and login, logout, navbar, footer|
+| 2 | Home Page Design, responsive design |
+| 3 |  Url Shortener & copy from clipboard |
+
+
+
+---
+# Package.json(Dependency)✨:-
+
+ | Serial No            | Backend                      |  Frontend      |
+| ----------------- | ---------------------|------------------------ |
+| 1 | nodemon ,bcrypt | Chakra-ui |
+| 2 | mongoose ,express-jwt | React Router dom |
+| 3 | cors , jsonwebtoken | redux , react-icons |
+| 4 | dotenv ,express | react-redux , react-thunk |
+| 6 | body-parser | react-toastify , react|
+| 7 | object-hash | react-hot-toast  , axios|
+
+  
+
+---
 ✨ # Architecture:
 ---
 This URL Hashing System provides a comprehensive solution to KGS's marketing department's challenges with long URLs and UTM tracking. The system ensures appropriate authentication, association, and tracking of hashed URLs. It is built using the MERN stack (MongoDB, Express.js, React.js, and Node.js) for a robust and scalable architecture.Building a complete solution involves a series of steps.  Please note that this example is meant for educational purposes, and in a production environment, you would need to address additional concerns such as security, error handling, and scalability.
+
 
 # Architecture Choice
 
 The choice of the MERN stack was driven by the need for a flexible, scalable, and easy-to-integrate solution. Here's a brief overview:
 
 $  MongoDB: Chosen as the database for its NoSQL nature, allowing flexibility in handling various data structures and scalability options.
-
 $ Express.js: Used to create a RESTful API for seamless communication between the frontend and backend components.
-
 $ React.js: Employed for building the front end to provide a dynamic and responsive user interface.
-
 $ Node.js: Serves as the runtime environment for the entire application, ensuring consistent execution.
 
+
 # Authentication, Association, and Tracking
+
 The system employs user authentication to ensure secure interactions. Hashed URLs are associated with their original counterparts, and click events are tracked for analytics, providing valuable insights for marketing strategies.
+
 
 ---
 ## Getting Started 
+
     
 # Functionality For Url Shortener & Authentication :-
 
@@ -107,6 +134,8 @@ The system employs user authentication to ensure secure interactions. Hashed URL
 
     ✨Clipboard Copy Failure: If copying to the clipboard fails, users are notified of the error.
 
+
+
 ⭕ Form Validation on Authentication
 
       Explain the rules and requirements for form validation in your application.
@@ -132,6 +161,7 @@ The system employs user authentication to ensure secure interactions. Hashed URL
 
     Message: "Something went wrong on our end. Please try again later."
 
+
 ---
 💫Backend (Node.js)
 
@@ -141,16 +171,19 @@ The system employs user authentication to ensure secure interactions. Hashed URL
     Copy the shortened URL and share it as needed.
     Users accessing the shortened URL will be redirected to the original long URL.
 
+
 Endpoints:
 
        /signup: User signup with validation.
       /login: User login with JWT token generation.
       /:- The URL shortening logic involves hashing the original URL using the object-hash library.
      🌐 https://url-shortner-topaz-iota.vercel.app/api-doc:- for swagger view
+
       
 💫Frontend (React.js)
 
     The front end is a React.js application with simple components for signup and login, UrlShortner.
+
 
 Components:
 
@@ -158,6 +191,70 @@ Components:
          Login.js: User login form.
          UrlShotner:- Url Modal part
          
+---
+         
+## Flow
+
+```mermaid
+graph TD;
+ App-->UrlShortnerHomePage
+UrlShortnerHomePage-->SignupPage
+SignupPage--> LoginPage
+
+```
+
+---
+⭕ Steps to Use Our Project
+
+This project showcases a straightforward authentication system utilizing JWT tokens with a Node.js backend and a React.js frontend.
+
+#✨ Getting Started
+
+✨ Initializing the Application
+
+Open your terminal and navigate to the frontend directory.
+Run the command npm start to launch the application locally.
+Access the application through your web browser at http://localhost:3000.
+
+✨ Home Page
+
+Upon launching the application, the home page welcomes users with essential options for interaction:
+
+Signup: Allows new users to create an account.
+Login: Provides access for existing users.
+Logout: Logs the user out of the application.
+Url Shortener: Navigates to the URL Shortener feature.
+
+✨ User Journey:-
+
+💫 Signup
+
+Click on the "Signup" option on the home page.
+Fill in the required information in the signup form.
+Submit the form to create a new account.
+
+💫 Login
+
+Choose the "Login" option on the home page.
+Enter your credentials in the login form.
+Submit the form to access your personalized experience.
+
+💫 Url Shortener
+
+ "Url Shortener" feature on the home page.
+Ensure that the original URL is complete and includes the necessary protocol (e.g., https:// or http://).
+Enter the original URL in the provided input field.
+Click the "Shorten URL" button to generate a shortened URL.
+Copy the shortened URL to share it easily.
+To test the shortened URL, paste it into your browser's address bar and press Enter. You will be redirected to the original long URL.
+
+# Tips
+
+Error Handling: If you encounter any issues or errors during the URL shortening process, check the error messages for guidance.
+Usage: URL Shortener offers a seamless and user-friendly experience for quickly shortening and sharing URLs. Whether for marketing campaigns or everyday use, this application provides a reliable solution for managing and tracking your links.
+
+---    
+
 ✨Hosting on Vercel
 
      Build the React app:
@@ -165,13 +262,14 @@ Components:
     npm run build
     Install Vercel CLI:
     npm install -g vercel
+
     
 Deploy to Vercel:
 
      cd frontend
      vercel
-    
     Follow the prompts to deploy your application.
+
 
 # Tests
 ---
@@ -184,18 +282,22 @@ $ Frontend (if applicable):
 $ API documentation:
  Integrate Swagger for clear and interactive API documentation.
 
+
 # Backend (Node.js, Express, MongoDB):
 
 Use Express.js to create a RESTful API.
 MongoDB stores the mappings between the hashed URLs and the original URLs.
 
+
 # Frontend (React.js):
 
 Build a simple UI for interacting with the URL shortening and redirection functionality.
 
+
 # Hashing Algorithm:
 
 Use a secure hashing algorithm (e.g., SHA-256) to generate unique hashes for the URLs.
+
 
 # Security Considerations:
 
@@ -203,10 +305,6 @@ Implement input validation and sanitize user inputs to prevent potential securit
 Use HTTPS to secure data transmission.
 Secure MongoDB connections and enforce access control.
 
-# Testing:
-
-Write unit tests for the backend API using testing libraries like Mocha or Jest.
-Conduct end-to-end tests for the front end using testing frameworks like Jest and React Testing Library.
 
 ---
 # Documentation:
@@ -287,80 +385,6 @@ Keep your Git commits organized and use meaningful commit messages.
 This MERN stack-based solution provides a full-stack application with a React.js frontend for user interaction and a Node.js backend with Express for handling URL shortening and redirection. Ensure to follow best practices for each component of the stack to create a clean, scalable, and maintainable solution.
 
 
-## Features ✨:-
----
- | Serial No            | Feature                                                              |
-| ----------------- | ------------------------
-| 1 | User Signup and login, logout, navbar, footer|
-| 2 | Home Page Design, responsive design |
-| 3 |  Url Shortener & copy from clipboard |
-
-
-
----
-# Package.json(Dependency)✨:-
-
- | Serial No            | Backend                      |  Frontend      |
-| ----------------- | ---------------------|------------------------ |
-| 1 | nodemon ,bcrypt | Chakra-ui |
-| 2 | mongoose ,express-jwt | React Router dom |
-| 3 | cors , jsonwebtoken | redux , react-icons |
-| 4 | dotenv ,express | react-redux , react-thunk |
-| 6 | body-parser | react-toastify , react|
-| 7 | object-hash | react-hot-toast  , axios|
-
-  
-
-
-⭕ Steps to Use Our Project
-
-This project showcases a straightforward authentication system utilizing JWT tokens with a Node.js backend and a React.js frontend.
-
-#✨ Getting Started
-
-✨ Initializing the Application
-
-Open your terminal and navigate to the frontend directory.
-Run the command npm start to launch the application locally.
-Access the application through your web browser at http://localhost:3000.
-
-✨ Home Page
-
-Upon launching the application, the home page welcomes users with essential options for interaction:
-
-Signup: Allows new users to create an account.
-Login: Provides access for existing users.
-Logout: Logs the user out of the application.
-Url Shortener: Navigates to the URL Shortener feature.
-
-✨ User Journey:-
-
-💫 Signup
-
-Click on the "Signup" option on the home page.
-Fill in the required information in the signup form.
-Submit the form to create a new account.
-
-💫 Login
-
-Choose the "Login" option on the home page.
-Enter your credentials in the login form.
-Submit the form to access your personalized experience.
-
-💫 Url Shortener
-
- "Url Shortener" feature on the home page.
-Ensure that the original URL is complete and includes the necessary protocol (e.g., https:// or http://).
-Enter the original URL in the provided input field.
-Click the "Shorten URL" button to generate a shortened URL.
-Copy the shortened URL to share it easily.
-To test the shortened URL, paste it into your browser's address bar and press Enter. You will be redirected to the original long URL.
-
-# Tips
-
-Error Handling: If you encounter any issues or errors during the URL shortening process, check the error messages for guidance.
-Usage: URL Shortener offers a seamless and user-friendly experience for quickly shortening and sharing URLs. Whether for marketing campaigns or everyday use, this application provides a reliable solution for managing and tracking your links.
-
 Contributing
 
      💻 Contributions are welcome! Please follow the standard guidelines for contributing.
@@ -368,17 +392,7 @@ Contributing
 
 
 
-## Flow
 
-```mermaid
-graph TD;
- App-->HomePage
-HomePage-->SignupPage
-SignupPage--> LoginPage
-
-```
-
----
 
 
 
