@@ -1,12 +1,9 @@
 
 > 💻 PROJECT NAME ✨ => 💻   url-Shortner : URL Hashing System & Authentication System
-
-> 
 <br>
 
 [![Backend Deploy to Vercel](https://img.shields.io/badge/Backend_Deployed_Vercel_Link-0A66C2?style=for-the-badge&logo=ko-fi&logoColor=white)](https://url-shortner-topaz-iota.vercel.app/)
 [![Deployed App Vercel Link](https://img.shields.io/badge/Deployed_App_Vercel_Link-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://url-shortner-zptf.vercel.app/)
-
 
 
 ## 🔗 Profile Links✨
@@ -25,7 +22,7 @@
   - `JavaScript `
   - `ReactJS`
   - `Redux`
-    - #### For Backend:-
+ - #### For Backend:-
    - `NodeJS`
    - `ExpressJS`
     - `MongoDB `
@@ -37,8 +34,12 @@
    - `Chakra UI `
   
 - #### For live Project: -
+- 
    - `Vercel`
-   
+  
+ - #### Hashing Library:-
+ - 
+-  `object-hash`
 
 ## ⭕Steps to run our project:
 
@@ -46,7 +47,7 @@
 
 ✨Run the command `npm install` in both the frontend and backend folders.
 
-✨Run the command `npm run server` in the backend folder.
+✨Run the command `npm run dev` in the backend folder.
 
 ✨Run the command `npm start` in the frontend folder on localhost:3000.
 
@@ -63,7 +64,7 @@ $  MongoDB: Chosen as the database for its NoSQL nature, allowing flexibility in
 
 $ Express.js: Used to create a RESTful API for seamless communication between the frontend and backend components.
 
-$ React.js: Employed for building the frontend to provide a dynamic and responsive user interface.
+$ React.js: Employed for building the front end to provide a dynamic and responsive user interface.
 
 $ Node.js: Serves as the runtime environment for the entire application, ensuring consistent execution.
 
@@ -71,39 +72,7 @@ $ Node.js: Serves as the runtime environment for the entire application, ensurin
 The system employs user authentication to ensure secure interactions. Hashed URLs are associated with their original counterparts, and click events are tracked for analytics, providing valuable insights for marketing strategies.
 
 
-## Getting Started
-
-### Prerequisites
-
-    - Node.js and npm installed
-    - MongoDB installed (for local development)
-
-### Installation
-
-1. **Clone the repository:**
-
-       git clone https://github.com/yourusername/react-node-auth.git
-       cd react-node-auth
-   
-Install dependencies for both backend and frontend:
-
-
-    cd backend
-    npm install
-    cd ../frontend
-    npm install
-    
-Run the development servers:
-
-     Backend:
-    cd backend
-    npm run dev
-
-    Frontend:
-      cd frontend
-      npm start
-      
-    Open your browser and visit http://localhost:3000 to see the app in action.
+## Getting Started 
     
 # Functionality
 
@@ -160,20 +129,26 @@ Run the development servers:
 💫Backend (Node.js)
 
         The backend is a Node.js server using Express, MongoDB for data storage, bcrypt for password hashing, and JSON Web Tokens (JWT) for authentication.
+        The URL shortening logic involves hashing the original URL using the object-hash library.Enter the original URL in the provided input field.
+     Click the "Shorten URL" button to generate a shortened URL.
+    Copy the shortened URL and share it as needed.
+    Users accessing the shortened URL will be redirected to the original long URL.
 
 Endpoints:
 
        /signup: User signup with validation.
       /login: User login with JWT token generation.
+      /:- The URL shortening logic involves hashing the original URL using the object-hash library.
       
 💫Frontend (React.js)
 
-    The frontend is a React.js application with simple components for signup and login.
+    The front end is a React.js application with simple components for signup and login, UrlShortner.
 
 Components:
 
            Signup.js: User signup form.
           Login.js: User login form.
+          UrlShotner:- Url Modal part
          
 ✨Hosting on Vercel
 
