@@ -37,7 +37,7 @@
    
 - #### For Styling:-
   
-   - `Chakraui`
+  - `Chakraui`
   
 - #### For live Project: -
 
