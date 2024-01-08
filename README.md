@@ -275,13 +275,25 @@ Deploy to Vercel:
 ---
 $ Backend API:
   Write unit tests using testing libraries like Mocha Jest, and Postman.
+  
+![Screenshot (1889)](https://github.com/shikhu51197/url-Shortner/assets/107506646/0095577c-43f0-4863-a1d5-412e90d1bf9a)
 
-$ Frontend (if applicable):
+![Screenshot (1888)](https://github.com/shikhu51197/url-Shortner/assets/107506646/056345a4-2ab8-46a6-a986-c0669db47f57)
+
+![Screenshot (1887)](https://github.com/shikhu51197/url-Shortner/assets/107506646/982134b9-1229-4b6f-a879-d470dca77ce6)
+
+$ Frontend 
+(if applicable):
   Write unit tests using Jest and React Testing Library.
   
+  ![Screenshot (1890)](https://github.com/shikhu51197/url-Shortner/assets/107506646/8e282b67-b40a-441a-a455-3210afdde8ca)
+  
+![Screenshot (1891)](https://github.com/shikhu51197/url-Shortner/assets/107506646/95d5ed99-349b-4938-b81d-c6014c090fba)
+
 $ API documentation:
  Integrate Swagger for clear and interactive API documentation.
 
+![Screenshot (1886)](https://github.com/shikhu51197/url-Shortner/assets/107506646/38e918d4-52d8-4ce5-b704-82d90dc97324)
 
 # Backend (Node.js, Express, MongoDB):
 
@@ -372,8 +384,6 @@ Implement a CI/CD pipeline for automated testing and deployment using tools like
 # Swagger:
 
 Integrate Swagger documentation for the API to assist other developers in understanding and interacting with your API.
-
-![Screenshot (1886)](https://github.com/shikhu51197/url-Shortner/assets/107506646/c7f41ad2-4455-4d4b-bd01-7c8b7831b057)
 
 # Acknowledgments:
 
