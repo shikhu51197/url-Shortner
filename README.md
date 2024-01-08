@@ -94,8 +94,11 @@ This URL Hashing System provides a comprehensive solution to KGS's marketing dep
 The choice of the MERN stack was driven by the need for a flexible, scalable, and easy-to-integrate solution. Here's a brief overview:
 
 $  MongoDB: Chosen as the database for its NoSQL nature, allowing flexibility in handling various data structures and scalability options.
+
 $ Express.js: Used to create a RESTful API for seamless communication between the frontend and backend components.
+
 $ React.js: Employed for building the front end to provide a dynamic and responsive user interface.
+
 $ Node.js: Serves as the runtime environment for the entire application, ensuring consistent execution.
 
 
