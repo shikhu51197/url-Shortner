@@ -1,9 +1,35 @@
+
+//api documentation
+import swaggerUi from 'swagger-ui-express'
+import swaggerDoc from 'swagger-jsdoc'
+
+//pacakages
 import express from "express";
 import mongoose from "mongoose";
 import bodyParser from "body-parser";
 import shortUrlRoutes from "./routes/shortUrlRoutes.js";
 import cors from "cors";
 import userRoutes from "./routes/userRoutes.js";
+
+//swagger api config 
+//swagger api options
+const options = {
+  definition :{
+     openapi :'3.0.0' ,
+   info:{
+    title:'url shortner Application' ,
+    description:'MERN Url shortner Application'
+   } ,
+   servers:[
+    {
+      url:"https://url-shortner-topaz-iota.vercel.app"
+   
+    }
+   ]
+  },
+  apis:["./routes/*.js"]
+}
+const spec = swaggerDoc(options);
 
 
 const app = express();
@@ -36,6 +62,9 @@ db.on("error", (err) => {
 
 app.use("/api", shortUrlRoutes);
 app.use("/api/auth", userRoutes);
+
+//homeroute root 
+app.use('/api-doc' , swaggerUi.serve , swaggerUi.setup(spec))
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
