@@ -37,11 +37,11 @@
    
 - #### For Styling:-
   
-   -  `Chakra UI `
+   - `Chakraui`
   
 - #### For live Project: -
 
-   -  `Vercel`
+  - `Vercel`
   
  - #### Hashing Library:-
 
