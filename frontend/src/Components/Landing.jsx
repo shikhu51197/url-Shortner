@@ -4,10 +4,13 @@ import UrlShortener from "./UrlShortner";
 
 const Landing = () => {
   return (
-    <Box position="relative" textAlign="center">
+    
+    <Box  >
       <Image
         src="https://images.unsplash.com/photo-1463171379579-3fdfb86d6285?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt="Homepage Image"
+        
+        h={{ base: "100vh", md: "100%" , lg:"100%" }}
         w="100%"
         objectFit="cover"
       />

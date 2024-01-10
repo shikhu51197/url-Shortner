@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { toast} from "react-toastify";
+import { toast } from "react-toastify";
 
 import {
   Box,
@@ -15,16 +15,19 @@ const UrlShortener = () => {
   const [originalUrl, setOriginalUrl] = useState("");
   const [shortenedUrl, setShortenedUrl] = useState("");
   const { colorMode } = useColorMode();
- 
+
   const handleShortenUrl = async () => {
     if (!originalUrl.trim()) {
-          toast.error("Please enter a valid URL");
-          return;
-        }
+      toast.error("Please enter a valid URL");
+      return;
+    }
     try {
-      const response = await axios.post("https://url-shortner-topaz-iota.vercel.app/api/shorten", {
-        originalUrl: originalUrl,
-      });
+      const response = await axios.post(
+        "https://url-shortner-topaz-iota.vercel.app/api/shorten",
+        {
+          originalUrl: originalUrl,
+        }
+      );
 
       console.log("Response:", response.data);
       setShortenedUrl(response.data.shortUrl);
@@ -51,17 +54,19 @@ const UrlShortener = () => {
 
   return (
     <Box
-      mt="200px"
+      mt={{ base: "480px", md: "450px", lg: "400px" }}
       p={4}
       bg={colorMode === "light" ? "white" : "gray.800"}
-      minH="20vh"
+      minH=  {{ base: "5vh", md: "10vh", lg: "30vh" }}
       rounded="lg"
+      w = {{ base: "250px", md: "400px", lg: "500px" }}
       boxShadow="lg"
     >
       <Heading
         mb={4}
-        size="lg"
+      
         color={colorMode === "light" ? "blue.600" : "blue.300"}
+        fontSize={{ base: "sm", md: "md", lg: "2xl" }}
       >
         URL Shortener
       </Heading>
@@ -72,7 +77,12 @@ const UrlShortener = () => {
         placeholder="Enter URL"
         mb={4}
       />
-      <Button colorScheme="teal" onClick={handleShortenUrl} mb={4}>
+      <Button
+        colorScheme="teal"
+        onClick={handleShortenUrl}
+        mb={4}
+        fontSize={{ base: "sm", md: "md", lg: "xl" }}
+      >
         Shorten URL
       </Button>
       {shortenedUrl && (
@@ -81,22 +91,22 @@ const UrlShortener = () => {
           p={4}
           borderRadius="md"
         >
-          <Heading size="sm">Shortened URL:</Heading>
+          <Heading fontSize={{ base: "sm", md: "md" , lg:"xl" }}>Shortened URL:</Heading>
           <Link
             href={shortenedUrl}
             target="_blank"
             rel="noopener noreferrer"
             mb={2}
             display="block"
+            fontSize={{ base: "sm", md: "md" , lg:"xl" }}
           >
             {shortenedUrl}
           </Link>
-          <Button onClick={handleCopyClick} colorScheme="blue" size="sm">
+          <Button onClick={handleCopyClick} colorScheme="blue" fontSize={{ base: "sm", md: "md" , lg:"xl" }}>
             Copy to Clipboard
           </Button>
         </Box>
       )}
-    
     </Box>
   );
 };

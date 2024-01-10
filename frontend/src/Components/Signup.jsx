@@ -65,11 +65,18 @@ const Signup = () => {
 
   return (
     <>
-      <Box display="flex" width="100%">
-        <Box width="50%" mt="100px">
+      <Box  width="100%" px={5}   display="grid"
+        
+        gridTemplateColumns={[
+          "repeat(1,1fr)",
+          "repeat(1,1fr)",
+          "repeat(1,1fr)",
+          "repeat(2,1fr)",
+        ]}>
+        <Box  mt="100px">
           <Image src={logo} borderRadius={10} width="100%" />
         </Box>
-        <Box width="50%" mt="100px">
+        <Box  mt="200px">
           <Flex justifyContent="center" alignItems="center" minHeight="100vh">
             <Container p={4} borderWidth="1px" borderRadius="md">
               <Heading as="h2" size="xl" textAlign="center" mb={6}>

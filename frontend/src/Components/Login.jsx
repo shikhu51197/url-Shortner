@@ -38,15 +38,25 @@ const Login = () => {
 
   return (
     <>
-      <Box display="flex" width="100%">
-        <Box width="30%" mt="100px">
-          <Image src={logo} borderRadius={10} width="100%" />
+      <Box
+        width="100%"
+        px={10}
+        display="grid"
+        gridTemplateColumns={[
+          "repeat(1,1fr)",
+          "repeat(1,1fr)",
+          "repeat(1,1fr)",
+          "repeat(3,1fr)",
+        ]}
+      >
+        <Box mt="150px">
+          <Image src={logo} borderRadius={10}   width="80%"/>
         </Box>
         <Box
-          mt="100px"
           p={4}
           m="auto"
-          width="30%"
+          mt="200px"
+          width="100%"
           borderWidth="1px"
           borderRadius="md"
           boxShadow="lg"
@@ -83,8 +93,8 @@ const Login = () => {
           </form>
         </Box>
 
-        <Box width="30%" mt="100px">
-          <Image src={logo1} borderRadius={10} width="100%" />
+        <Box mt="150px">
+          <Image src={logo1} borderRadius={10} width="80%" />
         </Box>
         <ToastContainer position="top-right" />
       </Box>
