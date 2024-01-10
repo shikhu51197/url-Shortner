@@ -22,10 +22,10 @@ const get_singup_success = (payload) => {
   };
 };
 
-const get_singup_Error = (payload) => {
+const get_singup_Error = () => {
   return {
     type: GET_Singup_Error,
-    payload,
+   
   };
 };
 

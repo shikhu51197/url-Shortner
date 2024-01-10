@@ -11,7 +11,6 @@ const initialState = {
   isLoad: false,
   isError: false,
   userdata: [],
-  errData :[],
   isAuth: false,
   createAccount: false,
 };
@@ -42,7 +41,6 @@ const reducer = (state = initialState, action) => {
         ...state,
         isLoad: false,
         isError: true,
-        errData: payload,
         isAuth: false,
         createAccount: false,
       };
