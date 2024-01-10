@@ -169,10 +169,11 @@ The system employs user authentication to ensure secure interactions. Hashed URL
 💫Backend (Node.js)
 
         The backend is a Node.js server using Express, MongoDB for data storage, bcrypt for password hashing, and JSON Web Tokens (JWT) for authentication.
-        The URL shortening logic involves hashing the original URL using the object-hash library.Enter the original URL in the provided input field.
-     Click the "Shorten URL" button to generate a shortened URL.
-    Copy the shortened URL and share it as needed.
-    Users accessing the shortened URL will be redirected to the original long URL.
+        The URL shortening logic involves hashing the original URL using the object-hash library. 
+        Enter the original URL in the provided input field.
+        Click the "Shorten URL" button to generate a shortened URL.
+        Copy the shortened URL and share it as needed.
+        Users accessing the shortened URL will be redirected to the original long URL.
 
 
 Endpoints:
@@ -185,14 +186,7 @@ Endpoints:
       
 💫Frontend (React.js)
 
-    The front end is a React.js application with simple components for signup and login, UrlShortner.
-
-
-Components:
-
-         Signup.js: User signup form.
-         Login.js: User login form.
-         UrlShotner:- Url Modal part
+    The front end is a React.js application with simple Components:- for signup and login, UrlShortner.
          
 ---
          
