@@ -2,10 +2,11 @@
 > 💻 PROJECT NAME ✨ => 💻   url-Shortner : URL Hashing System & Authentication System
 <br>
 
+
 [![Backend Deploy to Vercel](https://img.shields.io/badge/Backend_Deployed_Vercel_Link-0A66C2?style=for-the-badge&logo=ko-fi&logoColor=white)](https://url-shortner-topaz-iota.vercel.app/)
 [![Deployed App Vercel Link](https://img.shields.io/badge/Deployed_App_Vercel_Link-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://url-shortner-zptf.vercel.app/)
 
-
+---
 ## 🔗 Profile Links✨
 
 
@@ -13,34 +14,40 @@
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | [![Resume](https://img.shields.io/badge/my_Resume-E75480?style=for-the-badge&logo=ko-fi&logoColor=white)](https://drive.google.com/file/d/1YE62u2ChjmlR-EKeqZ75UvFMg_KcY86T/view?usp=sharing) | [![github](https://img.shields.io/badge/github-1DA1F2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/shikhu51197/)| [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shikha-gupta-12a2b5199) |[![portfolio](https://img.shields.io/badge/my_portfolio-18A303?style=for-the-badge&logo=ionic&logoColor=white)](https://shikhu51197.github.io/) |[![Blogger](https://img.shields.io/badge/Blogger-FE5A1D?style=for-the-badge&logo=Blogger&logoColor=white)](https://wwwartificial-intelligence.blogspot.com/) |[![Medium](https://img.shields.io/badge/Medium-000?style=for-the-badge&logo=Medium&logoColor=white)](https://medium.com/@sg780060) |  
 
-
+---
 ## 💫Tech-Stack->
 
 - #### For Frontend:-
+  
    - `HTML5`
   - `CSS3`
   - `JavaScript `
   - `ReactJS`
   - `Redux`
+    
  - #### For Backend:-
+   
    - `NodeJS`
    - `ExpressJS`
     - `MongoDB `
+     
 - #### For deploy database:- 
     
-     - `Vercel`
+   - `Vercel`
    
-- #### For Styling:-  
-   - `Chakra UI `
+- #### For Styling:-
+  
+  - `Chakraui`
   
 - #### For live Project: -
-- 
-   - `Vercel`
+
+  - `Vercel`
   
  - #### Hashing Library:-
- - 
--  `object-hash`
 
+   -  `object-hash`
+  
+---
 ## ⭕Steps to run our project:
 
 ✨Clone the repository.
@@ -52,9 +59,35 @@
 ✨Run the command `npm start` in the frontend folder on localhost:3000.
 
 ---
+## Features ✨:-
+---
+ | Serial No            | Feature                                                              |
+| ----------------- | ------------------------
+| 1 | User Signup and login, logout, navbar, footer|
+| 2 | Home Page Design, responsive design |
+| 3 |  Url Shortener & copy from clipboard |
+
+
+
+---
+# Package.json(Dependency)✨:-
+
+ | Serial No            | Backend                      |  Frontend      |
+| ----------------- | ---------------------|------------------------ |
+| 1 | nodemon ,bcrypt | Chakra-ui |
+| 2 | mongoose ,express-jwt | React Router dom |
+| 3 | cors , jsonwebtoken | redux , react-icons |
+| 4 | dotenv ,express | react-redux , react-thunk |
+| 6 | body-parser | react-toastify , react|
+| 7 | object-hash | react-hot-toast  , axios|
+
+  
+
+---
 ✨ # Architecture:
 ---
 This URL Hashing System provides a comprehensive solution to KGS's marketing department's challenges with long URLs and UTM tracking. The system ensures appropriate authentication, association, and tracking of hashed URLs. It is built using the MERN stack (MongoDB, Express.js, React.js, and Node.js) for a robust and scalable architecture.Building a complete solution involves a series of steps.  Please note that this example is meant for educational purposes, and in a production environment, you would need to address additional concerns such as security, error handling, and scalability.
+
 
 # Architecture Choice
 
@@ -68,13 +101,17 @@ $ React.js: Employed for building the front end to provide a dynamic and respons
 
 $ Node.js: Serves as the runtime environment for the entire application, ensuring consistent execution.
 
+
 # Authentication, Association, and Tracking
+
 The system employs user authentication to ensure secure interactions. Hashed URLs are associated with their original counterparts, and click events are tracked for analytics, providing valuable insights for marketing strategies.
 
 
+---
 ## Getting Started 
+
     
-# Functionality
+# Functionality For Url Shortener & Authentication :-
 
   ⭕ URL Shortening
   
@@ -100,7 +137,9 @@ The system employs user authentication to ensure secure interactions. Hashed URL
 
     ✨Clipboard Copy Failure: If copying to the clipboard fails, users are notified of the error.
 
-⭕ Form Validation 
+
+
+⭕ Form Validation on Authentication
 
       Explain the rules and requirements for form validation in your application.
 
@@ -108,24 +147,25 @@ The system employs user authentication to ensure secure interactions. Hashed URL
 
     Provide a list of possible form validation errors and their corresponding error messages.
 
-⭕ Invalid Email Format:
+    ⭕ Invalid Email Format:
 
      Message: "Please enter a valid email address."
      
-⭕ Invalid Password:
+    ⭕ Invalid Password:
 
      Message: "Password must be at least 8 characters long and include at least one lowercase letter, one uppercase letter, and one digit."
-⭕ Invalid Phone Format:
+    ⭕ Invalid Phone Format:
 
     Message: "Please enter a valid 10-digit phone number."
-⭕ User Already Exists:
+    ⭕ User Already Exists:
 
     Message: "An account with this email address already exists. Please use a different email."
-⭕ Server Error:
+    ⭕ Server Error:
 
     Message: "Something went wrong on our end. Please try again later."
 
 
+---
 💫Backend (Node.js)
 
         The backend is a Node.js server using Express, MongoDB for data storage, bcrypt for password hashing, and JSON Web Tokens (JWT) for authentication.
@@ -134,174 +174,39 @@ The system employs user authentication to ensure secure interactions. Hashed URL
     Copy the shortened URL and share it as needed.
     Users accessing the shortened URL will be redirected to the original long URL.
 
+
 Endpoints:
 
        /signup: User signup with validation.
       /login: User login with JWT token generation.
       /:- The URL shortening logic involves hashing the original URL using the object-hash library.
+     🌐 https://url-shortner-topaz-iota.vercel.app/api-doc:- for swagger view
+
       
 💫Frontend (React.js)
 
     The front end is a React.js application with simple components for signup and login, UrlShortner.
 
+
 Components:
 
-           Signup.js: User signup form.
-          Login.js: User login form.
-          UrlShotner:- Url Modal part
+         Signup.js: User signup form.
+         Login.js: User login form.
+         UrlShotner:- Url Modal part
          
-✨Hosting on Vercel
-
-     Build the React app:
-     cd frontend
-    npm run build
-    Install Vercel CLI:
-    npm install -g vercel
-    
-Deploy to Vercel:
-
-     cd frontend
-     vercel
-    
-    Follow the prompts to deploy your application.
-
-# Tests
 ---
-$ Backend API:
-  Write unit tests using testing libraries like Mocha Jest , and Postman.
+         
+## Flow
 
-$ Frontend (if applicable):
-  Write unit tests using Jest and React Testing Library.
-  
-$ API documentation:
- Integrate Swagger for clear and interactive API documentation.
+```mermaid
+graph TD;
+ App-->UrlShortnerHomePage
+UrlShortnerHomePage-->SignupPage
+SignupPage--> LoginPage
 
-# Backend (Node.js, Express, MongoDB):
-
-Use Express.js to create a RESTful API.
-MongoDB to store the mappings between the hashed URLs and the original URLs.
-
-# Frontend (React.js):
-
-Build a simple UI for interacting with the URL shortening and redirection functionality.
-
-# Hashing Algorithm:
-
-Use a secure hashing algorithm (e.g., SHA-256) to generate unique hashes for the URLs.
-
-# Security Considerations:
-
-Implement input validation and sanitize user inputs to prevent potential security vulnerabilities.
-Use HTTPS to secure data transmission.
-Secure MongoDB connections and enforce access control.
-
-# Testing:
-
-Write unit tests for the backend API using testing libraries like Mocha or Jest.
-Conduct end-to-end tests for the front end using testing frameworks like Jest and React Testing Library.
+```
 
 ---
-# Documentation:
-
-📋 TODO.md
-
- Acknowledgements Update:
-Update acknowledgements for open-source libraries and AWS technologies.
-
-🖇️AWS Free Tier Reminder:
-Highlight AWS Free Tier limitations.
-Implement cost controls and alerts.
-
-🖇️Continuous Monitoring:
-Implement monitoring and alerts for critical events.
-
-🖇️Database Choice Explanation:
-Add a note in assumptions.md about choosing MongoDB over DynamoDB.
-
-🖇️Documentation Improvements:
-Enhance setup.md for deployment steps.
-Improve code comments for clarity.
-
-🖇️Error Handling:
-Enhance error messages and logging.
-Optimization and Refactoring:
-
-🖇️Review and optimize code.
-Follow best practices for maintainability.
-
-🖇️Security Measures:
-Implement additional security measures.
-Conduct a security audit.
-
-🖇️Testing and Quality Assurance:
-Improve test coverage for backend and frontend.
-Implement a comprehensive testing strategy.
-
-🖇️Third-Party Analytics Integration:
-Explore integrations for enhanced tracking.
-Evaluate benefits of analytics services.
-
-🖇️Additional Features:
-Explore features like URL expiration.
-Optimize frontend for better user experience.
-
-$ Assumptions
-Users interacting with the system have valid authentication credentials.
-MongoDB is set up and configured for data storage.
-
-# Code Quality:
-
-Organize your code logically, follow best practices, and implement error handling.
-Keep backend and frontend code separate for maintainability.
-
-# Scalability:
-
-MongoDB can be scaled horizontally by adding more nodes to the cluster.
-Use load balancing for the Express.js backend to handle increased traffic.
-
-# Automation:
-
-Implement a CI/CD pipeline for automated testing and deployment using tools like Jenkins, GitLab CI, or GitHub Actions.
-
-# Swagger:
-
-Integrate Swagger documentation for the API to assist other developers in understanding and interacting with your API.
-
-# Acknowledgments:
-
-Acknowledge any open-source libraries or tools used in your project.
-
-# Git:
-
-Keep your Git commits organized and use meaningful commit messages.
-This MERN stack-based solution provides a full-stack application with a React.js frontend for user interaction and a Node.js backend with Express for handling URL shortening and redirection. Ensure to follow best practices for each component of the stack to create a clean, scalable, and maintainable solution.
-
-
-## Features ✨:-
----
- | Serial No            | Feature                                                              |
-| ----------------- | ------------------------
-| 1 | User Signup and login, logout, navbar, footer|
-| 2 | Home Page Design, responsive design |
-| 3 |  Url Shortener & copy from clipboard |
-
-
-
----
-# Package.json(Dependency)✨:-
-
- | Serial No            | Backend                      |  Frontend      |
-| ----------------- | ---------------------|------------------------ |
-| 1 | nodemon ,bcrypt | Chakra-ui |
-| 2 | mongoose ,express-jwt | React Router dom |
-| 3 | cors , jsonwebtoken | redux , react-icons |
-| 4 | dotenv ,express | react-redux , react-thunk |
-| 6 | body-parser | react-toastify , react|
-| 7 | object-hash | react-hot-toast  , axios|
-
-  
-
-
 ⭕ Steps to Use Our Project
 
 This project showcases a straightforward authentication system utilizing JWT tokens with a Node.js backend and a React.js frontend.
@@ -351,6 +256,83 @@ To test the shortened URL, paste it into your browser's address bar and press En
 Error Handling: If you encounter any issues or errors during the URL shortening process, check the error messages for guidance.
 Usage: URL Shortener offers a seamless and user-friendly experience for quickly shortening and sharing URLs. Whether for marketing campaigns or everyday use, this application provides a reliable solution for managing and tracking your links.
 
+---    
+
+✨Hosting on Vercel
+
+     Build the React app:
+     cd frontend
+    npm run build
+    Install Vercel CLI:
+    npm install -g vercel
+
+    
+Deploy to Vercel:
+
+     cd frontend
+     vercel
+    Follow the prompts to deploy your application.
+
+
+# Tests
+---
+$ Backend API:
+  Write unit tests using testing libraries like Mocha Jest, and Postman.
+  
+![Screenshot (1889)](https://github.com/shikhu51197/url-Shortner/assets/107506646/0095577c-43f0-4863-a1d5-412e90d1bf9a)
+
+![Screenshot (1888)](https://github.com/shikhu51197/url-Shortner/assets/107506646/056345a4-2ab8-46a6-a986-c0669db47f57)
+
+![Screenshot (1887)](https://github.com/shikhu51197/url-Shortner/assets/107506646/982134b9-1229-4b6f-a879-d470dca77ce6)
+
+$ Frontend 
+(if applicable):
+  Write unit tests using Jest and React Testing Library.
+  
+  ![Screenshot (1890)](https://github.com/shikhu51197/url-Shortner/assets/107506646/8e282b67-b40a-441a-a455-3210afdde8ca)
+  
+![Screenshot (1891)](https://github.com/shikhu51197/url-Shortner/assets/107506646/95d5ed99-349b-4938-b81d-c6014c090fba)
+
+$ API documentation:
+ Integrate Swagger for clear and interactive API documentation.
+
+![Screenshot (1886)](https://github.com/shikhu51197/url-Shortner/assets/107506646/38e918d4-52d8-4ce5-b704-82d90dc97324)
+
+# Backend (Node.js, Express, MongoDB):
+
+Use Express.js to create a RESTful API.
+MongoDB stores the mappings between the hashed URLs and the original URLs.
+
+
+# Frontend (React.js):
+
+Build a simple UI for interacting with the URL shortening and redirection functionality.
+
+
+# Hashing Algorithm:
+
+Use a secure hashing algorithm (e.g., SHA-256) to generate unique hashes for the URLs.
+
+
+# Security Considerations:
+
+Implement input validation and sanitize user inputs to prevent potential security vulnerabilities.
+Use HTTPS to secure data transmission.
+Secure MongoDB connections and enforce access control.
+
+
+---
+# Documentation:
+
+📋 TODO.md
+
+🖇️AWS Free Tier Reminder:
+Highlight AWS Free Tier limitations.
+
+🖇️Database Choice Explanation:
+Add a note in assumptions.md about choosing MongoDB over DynamoDB.
+
+
 Contributing
 
      💻 Contributions are welcome! Please follow the standard guidelines for contributing.
@@ -358,17 +340,7 @@ Contributing
 
 
 
-## Flow
 
-```mermaid
-graph TD;
- App-->HomePage
-HomePage-->SignupPage
-SignupPage--> LoginPage
-
-```
-
----
 
 
 
